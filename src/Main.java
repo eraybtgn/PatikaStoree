@@ -94,22 +94,25 @@ public class Main {
                     listprint(list);
                     break;
                 case "4":
-                    int id = 12345678;
+                    int id = scan.nextInt();
                     list = removeModel(id, list);
                     listprint(list);
                     break;
                 case "5":
+                    System.out.println("Lütfen marka adı girin ör:Apple.");
                     String marka = "Apple";
-                    List<Model> markaList = new ArrayList<>();
+                    List<Model> markaList = new ArrayList<Model>();
                     markaList = getMarka(marka, list);
                     listprint(markaList);
+
                     break;
                 case "6":
-                    int id2 = 12345;
+                    int id2 = scan.nextInt();
                     System.out.println(getId(id2, list).toString());
                     break;
                 case "7":
                     listprint(list);
+                    break;
 
                 default:
                     System.out.println("Yanlış değer girdiniz.");
